@@ -46,3 +46,7 @@ Initial release.
 ### 1.0.1
 
 Add icon.
+
+### 1.0.2
+
+Better icon.

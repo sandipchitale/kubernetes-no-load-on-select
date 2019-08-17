@@ -7,3 +7,7 @@
 ## 1.0.1
 
 - Add extension icon
+
+## 1.0.2
+
+- Better extension icon
