@@ -1,5 +1,5 @@
 {
-    "name": "kubernetes-no--on-select",
+    "name": "kubernetes-no-on-select",
     "displayName": "kubernetes-no-load-on-select",
     "description": "Do not load the document on tree node selection for Kubernetes resources in Cluster Explorer view.",
     "version": "1.0.0",

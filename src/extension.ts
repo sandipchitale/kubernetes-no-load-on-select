@@ -19,8 +19,8 @@ class KubernetesNoLoadOnSelect {
 
         if (node.nodeType === 'resource') {
             // This is a Kubernetes resource node
-            if (manifestKinds.includes('All')
-                || manifestKinds.includes(node.resourceKind.manifestKind)) {
+            if (manifestKinds.indexOf('All') != -1
+                || manifestKinds.indexOf(node.resourceKind.manifestKind) != -1) {
                 if (treeItem.command) {
                     // Clear the default command associated with tree node.
                     treeItem.command = null;
