@@ -2,4 +2,4 @@ out
 node_modules
 .vscode-test/
 .vsix
-
+kubernetes-no-load-on-select-*.vsix
