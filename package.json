@@ -3,7 +3,13 @@
     "displayName": "kubernetes-no-load-on-select",
     "icon": "images/icon.png",
     "description": "Do not load the document on tree node selection for Kubernetes resources in Cluster Explorer view.",
-    "version": "1.0.2",
+    "version": "1.0.3",
+    "keywords": [
+        "kubernetes"
+    ],
+    "extensionDependencies": [
+        "ms-kubernetes-tools.vscode-kubernetes-tools"
+    ],
     "publisher": "sandipchitale",
     "author": {
         "name": "Sandip Chitale"
@@ -34,8 +40,21 @@
                     "items": {
                         "type": "string"
                     },
-                    "description":
-                        "Do not load the document on tree node selection for Kubernetes resources for specified kinds. Supported kinds: All, ConfigMap, DaemonSet, Deployment, Ingress, Job, Namespace, Node, PersistentVolume, Pod, Secret, Service, StorageClass, Volume."
+                    "description": "Do not load the document on tree node selection for Kubernetes resources for specified kinds. Supported kinds: All, ConfigMap, DaemonSet, Deployment, Ingress, Job, Namespace, Node, PersistentVolume, Pod, Secret, Service, StorageClass, Volume."
+                },
+                "kubernetes-no-load-on-select.Pod.onselect": {
+                    "type": "string",
+                    "default": "Default",
+                    "enum": [
+                        "Default",
+                        "Terminal",
+                        "FollowLogs",
+                        "ShowLogs",
+                        "Get",
+                        "Describe",
+                        "Load"
+                    ],
+                    "description": "Command to invoke on selection of tree node for Pod in Clusters Explorer view"
                 }
             }
         }

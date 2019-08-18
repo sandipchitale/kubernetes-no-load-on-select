@@ -12,7 +12,7 @@ This extension works with Microsoft Kubernetes extension.
 
 ## Extension Settings
 
-`kubernetes-no-load-on-select.manifestKinds` - Do not load the document on tree node selection for Kubernetes resources for specified kinds. Supported kinds:
+`kubernetes-no-load-on-select.manifestKinds` - Do not load the document on tree node selection for Kubernetes resources for specified kinds. Supported resource kinds:
 
 All
 ConfigMap
@@ -29,6 +29,7 @@ Service
 StorageClass
 Volume
 
+`kubernetes-no-load-on-select.Pod.onselect` - Specify what command is executed when a tree node for a Pod is selected in Clusters Explorer view. The value of `Default` will basically ignore this setting. 
 
 ## Known Issues
 
@@ -50,3 +51,7 @@ Add icon.
 ### 1.0.2
 
 Better icon.
+
+### 1.0.3
+
+Setting `kubernetes-no-load-on-select.Pod.onselect` to control what command is executed when a tree node for a Pod is selected in Clusters Explorer view.
